@@ -1,0 +1,12 @@
+port ${PORT}
+cluster-enabled yes
+cluster-config-file nodes.conf
+cluster-node-timeout 5000
+cluster-announce-ip 47.102.214.252
+cluster-announce-port ${PORT}
+cluster-announce-bus-port 1${PORT}
+appendonly yes
+protected-mode no
+daemonize no
+masterauth passwd123
+requirepass passwd123
