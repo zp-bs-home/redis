@@ -8,5 +8,10 @@ cluster-announce-bus-port 1${PORT}
 appendonly yes
 protected-mode no
 daemonize no
+
+# 设置密码
 masterauth passwd123
 requirepass passwd123
+
+# 设置过期通知
+notify-keyspace-events "Ex"
